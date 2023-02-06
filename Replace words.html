@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <p>Replace words</p>
+        <button onclick="wordReplace()">REPLACE</button>
+        <p id='swap'>Hii Boy</p>
+        <script>
+            function wordReplace(){
+            let word= document.getElementById('swap').innerHTML;
+            document.getElementById('swap').innerText=word.replace("Hii Boy","Boy Hii");
+        }
+            </script>
+    </body>
+</html>

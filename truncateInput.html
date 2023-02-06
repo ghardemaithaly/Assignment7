@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>truncate Input</title>
+</head>
+<body>
+    <script>
+// truncate a string
+text_truncate = function(str,length,ending){
+    if(length == null){
+        length=100;
+    }
+
+    if(ending == null){
+        ending = "...";
+    }
+    if(str.length > length ){
+        return str.substring(4,length - ending.length) + ending;
+    }else{
+        return str;
+    }
+};
+console.log(text_truncate('Ice'));
+console.log(text_truncate('Icecream',3));
+
+
+    </script>
+</body>
+</html>
+
+
